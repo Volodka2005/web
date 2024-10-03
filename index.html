@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>  
+        <ol class="main-menu">
+            <li>
+                <a href="index.html">Головна сторінка</a>
+            </li>
+            <li>
+                <a href="lviv.html">Визначні місця Львова</a>
+            </li>
+            <li>
+                <a href="ukraine.html">Подорож Україною</a>
+            </li>
+            <li>
+                <a href="museum.html">Музеї світу</a>
+            </li>    
+        </ol>
+        <div class="menu-icon">&#9776;</div>  
+    </header>
+
+    <div class="welcome">
+        <h1>Вітаємо на нашому сайті!</h1>
+        <p>Якщо ви вперше відвідуєте наш сайт, ми б хотіли дізнатися ваші вподобання, щодо статей на сайті. Були б дуже вдячними, якби 
+            ви пройшли невеличке опитування нижче.
+        </p>
+    </div> 
+
+    <div>
+        <form action="#" method="post" class="survey-form">
+                <fieldset>
+                    <legend>Форма опитування</legend>
+                    <div class="form-group">
+                        <label for="name">Ваше ім'я:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="age">Ваш вік:</label>
+                        <input type="number" id="age" name="age" required>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="gender">Ваша стать:</label>
+                        <select id="gender" name="gender">
+                            <option value="male">Чоловіча</option>
+                            <option value="female">Жіноча</option>
+                            <option value="other">Інше</option>
+                        </select>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="email">Ваша електронна пошта:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="phone">Ваш номер телефону:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="birthdate">Дата народження:</label>
+                        <input type="date" id="birthdate" name="birthdate" required>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="favorite-color">Ваш улюблений колір:</label>
+                        <input type="color" id="favorite-color" name="favorite-color" required>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="food-preference">Ваша улюблена страва:</label>
+                        <input list="food-list" id="food-preference" name="food-preference" required>
+                        <datalist id="food-list">
+                            <option value="Піца">
+                            <option value="Суші">
+                            <option value="Стейк">
+                            <option value="Паста">
+                            <option value="Салат">
+                        </datalist>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <label>Подорожі та музеї, які вас цікавлять:</label>
+                            <br><input type="checkbox" id="museums" name="interests" value="museums"><label for="museums">Музеї</label>
+                            <br><input type="checkbox" id="city-travel" name="interests" value="city-travel"><label for="city-travel">Подорожі містами</label>
+                            <br><input type="checkbox" id="country-travel" name="interests" value="country-travel"><label for="country-travel">Подорожі країнами</label>
+                            <br><input type="checkbox" id="architectural-sites" name="interests" value="architectural-sites"><label for="architectural-sites">Подорожі архітектурними пам'ятками</label>
+                            <br><input type="checkbox" id="parks" name="interests" value="parks"><label for="parks">Парки</label>
+                    </div>     
+                
+                    <div class="form-group">
+                        <label for="feedback">Ваш відгук:</label>
+                        <textarea id="feedback" name="feedback" rows="4"></textarea>
+                    </div>
+                
+                    <div class="checkbox-group">
+                        <label for="agree">Згодні з умовами?</label>
+                        <br><input type="checkbox" id="agree" name="agree" required>
+                        <label for="agree">Я погоджуюся з умовами</label>
+                    </div>
+                
+                    <button type="submit">Надіслати</button>
+                </fieldset>
+        </form>
+
+        
+    </div> 
+
+    <div id="filter-container">
+        <h2>Фільтри</h2>
+        <label for="gender-filter">Фільтр за статтю:</label>
+        <select id="gender-filter">
+            <option value="all">Усі</option>
+            <option value="male">Чоловіки</option>
+            <option value="female">Жінки</option>
+            <option value="other">Інше</option>
+        </select>
+        <br>
+        <label for="min-age-filter">Мінімальний вік:</label>
+        <input type="number" id="min-age-filter" placeholder="Мінімальний вік">
+        <label for="max-age-filter">Максимальний вік:</label>
+        <input type="number" id="max-age-filter" placeholder="Максимальний вік">
+        <br>
+        <label for="interests-filter">Фільтр за інтересами:</label>
+        <select id="interests-filter">
+            <option value="all">Усі</option>
+            <option value="museums">Музеї</option>
+            <option value="city-travel">Подорожі містами</option>
+            <option value="country-travel">Подорожі країнами</option>
+            <option value="architectural-sites">Подорожі архітектурними пам'ятками</option>
+            <option value="parks">Парки</option>
+        </select>
+        <br>
+        
+        <button id="apply-filters-btn" type="button">Застосувати фільтри</button>
+    </div>
+
+    <div id="results-container">
+        <h2>Результати фільтрації</h2>
+        <ul id="survey-results"></ul>
+    </div>
+
+        
+    <div class="subscribe-container">
+        <h4>Дізнавайтесь першими про оновлення на нашій сторінці</h4>
+        <form class="subscribe-form" action="your-server-endpoint" method="post">
+            <input type="email" id="email" name="email" placeholder="E-mail" required >
+            <input type="submit" value="Підписатися">
+        </form>
+    </div>
+
+    <div class="test-info">
+        <h2>Онлайн тест</h2>
+        <p>Пройти невеличкий тест по Web дизайну, можете за <a href="/test.html">посиланням</a></p>
+    </div>
+    
+    <div class="test-info">
+        <h2>Емблема факультету</h2>
+        <p>Емблему факультету можете переглянути за <a href="/svg.html">посиланням</a></p>
+    </div>
+
+    <div class="test-info">
+        <h2>Невеличка гра</h2>
+        <p>Бажаєте відволіктися від буденості, та відпочити, можете зіграти у простеньку <a href="/game.html">гру</a></p>
+    </div>
+
+    <div class="welcome-message">
+        <p>Дякую, що переглядаєте наш сайт. Якщо ви вже читаєте це повідомлення, дякуємо вам за це.
+            На даний момент ви маєте можливість переглядати наступні сторінки:</p>
+        <ul>
+            <ol>
+                <a href="/lviv.html">Визначні місця Львова</a>
+            </ol>
+            <ol>
+                <a href="/ukraine.html">Цікаві місця України</a>
+            </ol>
+            <ol>
+                <a href="/museum.html">Списки популярних музеїв світу</a>
+            </ol>
+        </ul>
+    </div>
+    
+        
+        
+        
+
+    <div class="social-links">
+        <h3>Ми в соцмережах</h3>
+        <a href="https://www.instagram.com/_vovanto27_/"><img src="/images/inst.jpg" height="100" width="100"></a>
+        <a href="https://web.telegram.org/a/#5026616894"><img src="/images/teleg.png" height="90" width="90"></a>
+        <a href="https://www.facebook.com/profile.php?id=100056711450707"><img src="/images/face.png" height="90" width="90"></a>
+    </div>
+        
+</body>
+<script src="/js/script.js"></script>
+</html>

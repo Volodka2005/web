@@ -1,0 +1,572 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0 20px;
+    background-color: antiquewhite
+    
+}
+
+/* ---------------------------------------- */
+/* ---------------- Header -----------------*/
+/* ---------------------------------------- */
+
+header {
+    background-color: #333;
+    padding: 8px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+   
+}
+
+.main-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+.main-menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.main-menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.main-menu a:hover {
+    color: #ffcc00;
+}
+
+.menu-icon {
+    display: none;
+}
+
+@media (max-width: 650px) {
+    .main-menu {
+        display: none;
+        position: absolute;
+        top: 10px; 
+        left: 0;
+        background-color: #333;
+        width: 100%;
+    }
+
+    .main-menu li {
+        display: block;
+        text-align: center;
+        margin: 0;
+    }
+
+    .main-menu a {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        text-align: right;
+        color: white;
+        font-size: 15px;
+        margin-right: 15px;
+    }
+}
+
+/* ---------------------------------------- */
+/* ------------- Main Page -----------------*/
+/* ---------------------------------------- */
+
+.welcome {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 20px;
+}
+
+.welcome h1 {
+    color: #333;
+}
+
+.welcome p {
+    font-size: 18px;
+}
+
+/* ---------------------------------------- */
+
+
+.subscribe-container {
+    text-align: center;
+    margin-top: 20px; 
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.subscribe-form {
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto; 
+    
+}
+
+.subscribe-container h4 {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.subscribe-form input[type="email"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.subscribe-form input[type="submit"] {
+    background-color: #4CAF50; 
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+
+.subscribe-form input[type="submit"]:hover {
+    background-color: #45a049; 
+}
+
+/* ---------------------------------------- */
+
+.survey-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.checkbox-group label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: auto;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.checkbox-group label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    width: 380px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 500px) {
+    input, select {
+        width: 100%;
+    }
+
+    .checkbox-group label, input {
+        width: 100%;
+    }
+}
+
+#favorite-color-container {
+    margin-bottom: 15px;
+}
+
+#favorite-color {
+    vertical-align: middle;
+}
+
+
+
+/* ---------------------------------------- */
+
+
+.welcome-message {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.welcome-message ol {
+    margin-bottom: 10px;
+}
+
+.welcome-message a {
+    text-decoration: none;
+    color: #0366d6;
+}
+
+.welcome-message a:hover {
+    text-decoration: underline;
+}
+
+/* ---------------------------------------- */
+
+
+#filter-container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#filter-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#filter-container input,
+#filter-container select {
+    width: auto;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#filter-container button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#filter-container button:hover {
+    background-color: #45a049;
+}
+
+/* ---------------------------------------- */
+
+
+#results-container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#results-container h2 {
+    margin-bottom: 10px;
+}
+
+#survey-results {
+    list-style-type: none;
+    padding: 0;
+}
+
+#survey-results li {
+    margin-bottom: 10px;
+}
+
+/* ---------------------------------------- */
+
+.test-info {
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+}
+
+.test-info h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.test-info p {
+    margin: 0;
+}
+
+/* ---------------------------------------- */
+
+.social-links {
+    text-align: center;
+}
+
+.social-links h3 {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 10px; 
+}
+
+.social-links img {
+    border-radius: 50%; 
+    border: 2px solid #333; 
+    transition: transform 0.3s; 
+}
+
+.social-links img:hover {
+    transform: scale(1.1); 
+}
+
+@media only screen and (max-width: 420px) {
+    .social-links img {
+        width: 60px; 
+        height: 60px;
+    }
+}
+
+/* ---------------------------------------- */
+
+
+h1 {
+    font-size: 30px;
+    color: rgb(37, 31, 31);
+    padding: 10px;
+    text-align: center;
+}
+
+/* ---------------------------------------- */
+/* ------------- Page Lviv -----------------*/
+/* ---------------------------------------- */
+
+.theme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh; 
+    text-align: center; 
+    padding: 5px; 
+}
+
+.theme p {
+    max-width: 500px; 
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+h2 {
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+h3 {
+    color: #0066cc;
+}
+
+.left-image, .right-image {
+    max-width: 60%; 
+    height: auto;
+    margin: 25px 150px; 
+}
+
+.right-content, .left-content {
+    max-width: 400px;
+    line-height: 1.5;
+}
+
+.left-content {
+    margin-left: 150px;
+}
+
+.right-content{
+    margin-right: 150px;
+}
+
+.right-content, .left-content h3 {
+    text-align: center;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px 0;
+}
+
+.content-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+    .content-container {
+        flex-direction: column; 
+        text-align: center; 
+    }
+
+    .left-image, .right-image {
+        max-width: 100%; 
+        margin: 0;
+        order: -1; 
+    }
+
+    .right-content, .left-content {
+        max-width: 100%; 
+        margin-left: 0; 
+        margin-right: 0; 
+    }
+
+    .theme{
+        height: 40vh;
+    }
+}
+
+
+/* ---------------------------------------- */
+/* ------------- Page Ukraine --------------*/
+/* ---------------------------------------- */
+
+.tour-container {
+    max-width: 700px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.tour {
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+.tour img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 1;
+    border-radius: 5px;
+    max-width: 600px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: inline-block;
+}
+
+.dropdown p {
+    color: blue;
+}
+
+.dropdown-content p {
+    color: black;
+}
+
+/* ---------------------------------------- */
+/* -------------- Page Museum --------------*/
+/* ---------------------------------------- */
+
+table {
+    width: 90%;
+    height: 70%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #322727;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #cb8a8a;
+}
+
+td a{
+    text-decoration: none;
+    color: rgb(29, 29, 212)
+}
+
+td a:hover{
+    color: rgb(4, 4, 108)
+}
+
+.info-table h1, p {
+    text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+    table {
+        width: 100%; 
+    }
+
+    th, td {
+        padding: 5px; 
+    }
+}
+
+/* ---------------------------------------- */
+/* -------------- Page Test --------------*/
+/* ---------------------------------------- */
+
+
